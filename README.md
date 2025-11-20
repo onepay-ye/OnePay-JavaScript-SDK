@@ -27,7 +27,8 @@ document.getElementById('loadPaymentMethods').addEventListener('click', function
     if (window.OnePayLib) {
 
         // Initialize the SDK using your Merchant API key
-        window.OnePayLib.initialize('65f3743a2f604');
+        // Paste here your merchant account id from one pay
+        window.OnePayLib.initialize('<merchant id>');
 
         // Fetch available payment methods
         window.OnePayLib.getPaymentMethods()
